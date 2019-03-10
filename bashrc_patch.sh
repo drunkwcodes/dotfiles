@@ -1,4 +1,7 @@
 
+# PATH
+PATH=~/.local/bin/:$PATH
+
 # shortcuts
 
 alias cdp='cd ~/projects/'
