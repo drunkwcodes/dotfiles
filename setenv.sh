@@ -1,6 +1,6 @@
 apt update
 apt upgrade
-apt install python3 python3-pip vim git
+apt install python3 python3-pip python3-venv vim git
 
 # git config
 git config --global user.name "Drunkwcodes"
