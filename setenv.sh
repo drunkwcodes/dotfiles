@@ -22,5 +22,8 @@ mkdir ~/Downloads/
 # Patch bashrc
 cat ./bashrc_patch.sh >> ~/.bashrc
 
+# Add aliases
+ln -s $(pwd)/.bash_aliases ~/.bash_aliases
+
 . ~/.bashrc
 
