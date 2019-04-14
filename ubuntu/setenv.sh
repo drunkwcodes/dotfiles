@@ -14,6 +14,7 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 # pip user install 
 pip3 install --user -U autopep8 ipython pytest pytest-cov
 
+PROJ_ROOT=~/projects/dotfiles
 
 # mkdirs
 mkdir ~/projects/
@@ -21,11 +22,10 @@ mkdir ~/Downloads/
 
 # Patch bashrc
 rm ~/.bashrc
-ln -s $(pwd)/.bashrc ~/.bashrc
+ln -s "$PROJ_ROOT"/termux/.bashrc ~/.bashrc
 
 # Add aliases
 rm ~/.bash_aliases
-ln -s $(pwd)/../.bash_aliases ~/.bash_aliases
+ln -s "$PROJ_ROOT"/termux/.bash_aliases ~/.bash_aliases
 
 . ~/.bashrc
-
