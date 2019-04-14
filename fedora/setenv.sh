@@ -1,6 +1,8 @@
+# You should install git from the very beginning
+
 dnf update
 dnf upgrade
-dnf install python3 python3-pip python3-venv vim git -y
+dnf install python3 python3-pip python3-venv vim -y
 
 # git config
 git config --global user.name "Drunkwcodes"
@@ -22,10 +24,10 @@ mkdir ~/Downloads/
 
 # Patch bashrc
 rm ~/.bashrc
-ln -s "$PROJ_ROOT"/termux/.bashrc ~/.bashrc
+ln -s "$PROJ_ROOT"/fedora/.bashrc ~/.bashrc
 
 # Add aliases
 rm ~/.bash_aliases
-ln -s "$PROJ_ROOT"/termux/.bash_aliases ~/.bash_aliases
+ln -s "$PROJ_ROOT"/.bash_aliases ~/.bash_aliases
 
 . ~/.bashrc
