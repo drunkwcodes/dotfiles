@@ -4,7 +4,7 @@
 
 ### Termux
 
-**Remember enable the filesystem with `termux-setup-storage`**
+**Remember to enable the filesystem with `termux-setup-storage`**
 
 ##### Termux Setup
 
