@@ -9,7 +9,7 @@ FILE=fedora-rootfs.tar.xz
 if [ -f "$FILE" ]; then
     bash fedora_mod.sh
 else
-    wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Fedora/fedora.sh && bash fedora.sh
+    wget https://raw.githubusercontent.com/drunkwcodes/AnLinux-Resources/master/Scripts/Installer/Fedora/fedora.sh && bash fedora.sh
     cp "$FILE" "$BACKUP"
 fi
 

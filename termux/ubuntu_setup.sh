@@ -11,7 +11,7 @@ FILE=ubuntu-rootfs.tar.gz
 if [ -f "$FILE" ]; then
     bash ubuntu_mod.sh
 else
-    wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh && bash ubuntu.sh
+    wget https://raw.githubusercontent.com/drunkwcodes/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh && bash ubuntu.sh
     bash ubuntu_mod.sh
     cp "$FILE" "$BACKUP"
 fi

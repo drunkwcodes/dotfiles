@@ -1,2 +1,3 @@
-grep ubuntu -nr .
-grep fedora -nr .
+grep ubuntu -nr . --color
+grep fedora -nr . --color
+grep EXALAB -nr . --color=always
