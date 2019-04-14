@@ -6,6 +6,7 @@
 
 **Remember to enable the filesystem with `termux-setup-storage`**
 
+
 ##### Termux Setup
 
 
@@ -26,6 +27,7 @@ cp * ~/
 bash ubuntu_setup.sh
 ```
 
+
 ##### Termux Fedora Installation
 
 
@@ -36,6 +38,37 @@ bash fedora_setup.sh
 ```
 
 
+##### Ubuntu Setup
+
+
+```bash
+# In Ubuntu VM
+
+git clone https://github.com/drunkwcodes/dotfiles
+cd dotfiles
+cd ubuntu
+cp * ~/
+cd ~/
+. setenv.sh
+```
+
+
+##### Fedora Setup
+
+
+```bash
+# In Fedora VM
+
+git clone https://github.com/drunkwcodes/dotfiles
+cd dotfiles
+cd fedora
+cp * ~/
+cd ~/
+. setenv.sh
+```
+
+
 ## Test
 
 You can have a glance on those path settings by `bash **/test.sh`.
+
