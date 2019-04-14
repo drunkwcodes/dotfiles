@@ -25,3 +25,12 @@ cd termux
 cp * ~/
 bash ubuntu_setup.sh
 ```
+
+##### Termux Fedora Installation
+
+
+```bash
+cd termux
+cp * ~/
+bash fedora_setup.sh
+```
