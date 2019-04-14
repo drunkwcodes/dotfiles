@@ -4,8 +4,10 @@
 
 ### Termux
 
+**Remember enable the filesystem with `termux-setup-storage`**
 
 ##### Termux Setup
+
 
 ```bash
 cd termux
