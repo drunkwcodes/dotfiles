@@ -22,7 +22,7 @@ cd ~/
 
 
 ```bash
-cd ubuntu
+cd termux
 cp * ~/
 bash ubuntu_setup.sh
 ```
@@ -32,7 +32,7 @@ bash ubuntu_setup.sh
 
 
 ```bash
-cd fedora
+cd termux
 cp * ~/
 bash fedora_setup.sh
 ```
@@ -44,6 +44,8 @@ bash fedora_setup.sh
 ```bash
 # In Ubuntu VM
 
+mkdir projects
+cd projects
 git clone https://github.com/drunkwcodes/dotfiles
 cd dotfiles
 cd ubuntu
@@ -59,6 +61,8 @@ cd ~/
 ```bash
 # In Fedora VM
 
+mkdir projects
+cd projects
 git clone https://github.com/drunkwcodes/dotfiles
 cd dotfiles
 cd fedora
