@@ -34,3 +34,8 @@ cd termux
 cp * ~/
 bash fedora_setup.sh
 ```
+
+
+## Test
+
+You can have a glance on those path settings by `bash **/test.sh`.
