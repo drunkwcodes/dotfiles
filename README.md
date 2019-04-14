@@ -21,7 +21,7 @@ cd ~/
 
 
 ```bash
-cd termux
+cd ubuntu
 cp * ~/
 bash ubuntu_setup.sh
 ```
@@ -30,7 +30,7 @@ bash ubuntu_setup.sh
 
 
 ```bash
-cd termux
+cd fedora
 cp * ~/
 bash fedora_setup.sh
 ```
