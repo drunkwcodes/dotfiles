@@ -20,3 +20,6 @@ alias gsh='git stash'
 
 # todo command
 alias todo='grep -nr TODO'
+
+# vim command
+alias vim="vi"

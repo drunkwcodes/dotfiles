@@ -1,3 +1,4 @@
+# aliases for common linux distros except termux for android
 
 # shortcuts
 
