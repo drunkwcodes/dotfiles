@@ -74,5 +74,4 @@ cd ~/
 
 ## Test
 
-You can have a glance on those path settings by `bash **/test.sh`.
-
+You can have a glance on those path settings by `bash test`

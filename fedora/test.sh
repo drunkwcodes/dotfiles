@@ -1,2 +1,2 @@
-grep ubuntu -nr .
-grep termux -nr .
+grep ubuntu -nr . --color
+grep termux -nr . --color

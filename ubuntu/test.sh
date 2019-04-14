@@ -1,2 +1,2 @@
-grep fedora -nr .
-grep termux -nr .
+grep fedora -nr . --color
+grep termux -nr . --color
