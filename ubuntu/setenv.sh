@@ -22,10 +22,10 @@ mkdir ~/Downloads/
 
 # Patch bashrc
 rm ~/.bashrc
-ln -s "$PROJ_ROOT"/termux/.bashrc ~/.bashrc
+ln -s "$PROJ_ROOT"/ubuntu/.bashrc ~/.bashrc
 
 # Add aliases
 rm ~/.bash_aliases
-ln -s "$PROJ_ROOT"/termux/.bash_aliases ~/.bash_aliases
+ln -s "$PROJ_ROOT"/.bash_aliases ~/.bash_aliases
 
 . ~/.bashrc
