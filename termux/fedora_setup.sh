@@ -1,4 +1,4 @@
-BACKUP=~/storage/shard/TermuxBackup
+BACKUP=~/storage/shared/TermuxBackup
 if [ ! -d "$BACKUP" ]; then
     mkdir "$BACKUP"
 fi
