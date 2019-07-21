@@ -21,3 +21,9 @@ alias gsh='git stash'
 
 # todo command
 alias todo='grep -nr TODO'
+
+# untar
+alias untar='tar -xjvf'
+
+# valgrind
+alias vg='valgrind'
