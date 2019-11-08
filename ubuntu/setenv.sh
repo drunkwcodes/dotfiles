@@ -20,6 +20,8 @@ PROJ_ROOT=~/projects/dotfiles
 mkdir ~/projects/
 mkdir ~/Downloads/
 
+cp pack.sh ~/projects/
+
 # Patch bashrc
 rm ~/.bashrc
 ln -s "$PROJ_ROOT"/ubuntu/.bashrc ~/.bashrc
