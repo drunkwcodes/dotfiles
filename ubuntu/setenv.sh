@@ -9,7 +9,7 @@ git config --global core.editor vim
 git config --global merge.tool vimdiff
 
 # From http://garmoncheg.blogspot.com/2012/06/pretty-git-log.html
-git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 
 # pip user install 
 pip3 install --user -U autopep8 ipython pytest pytest-cov

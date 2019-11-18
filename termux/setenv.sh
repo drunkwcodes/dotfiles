@@ -8,7 +8,7 @@ git config --global user.email drunkwcodes@gmail.com
 git config --global core.editor vi
 
 # From http://garmoncheg.blogspot.com/2012/06/pretty-git-log.html
-git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 
 
 PROJ_ROOT=~/projects/dotfiles
