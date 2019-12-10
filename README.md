@@ -73,6 +73,28 @@ cd ~/
 . setenv.sh
 ```
 
+##### Windows Git Bash For Windows Setup
+
+
+```bash
+# In git bash
+
+mkdir projects
+cd projects
+git clone https://github.com/drunkwcodes/dotfiles
+cd dotfiles
+cd windows/git_bash
+
+# IMPORTANT: set $HOME to your user directory. (Maybe in other drive.)
+vim setenv.sh
+vim .bashrc
+
+cp * ~/
+cd ~/
+. setenv.sh
+```
+
+
 
 ## Test
 
