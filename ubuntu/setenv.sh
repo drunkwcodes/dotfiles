@@ -12,7 +12,7 @@ git config --global merge.tool vimdiff
 git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 
 # pip user install 
-pip3 install --user -U autopep8 ipython pytest pytest-cov
+pip3 install --user -U autopep8 ipython pytest pytest-cov black
 
 PROJ_ROOT=~/projects/dotfiles
 
@@ -22,12 +22,15 @@ mkdir ~/Downloads/
 
 cp pack.sh ~/projects/
 
+# update user dirs locale
+./update_locale.sh
+
 # Patch bashrc
-rm ~/.bashrc
+mv ~/.bashrc ~/.bashrc.bak
 ln -s "$PROJ_ROOT"/ubuntu/.bashrc ~/.bashrc
 
 # Add aliases
-rm ~/.bash_aliases
+mv ~/.bash_aliases ~/.bash_aliases.bak
 ln -s "$PROJ_ROOT"/.bash_aliases ~/.bash_aliases
 
 . ~/.bashrc
