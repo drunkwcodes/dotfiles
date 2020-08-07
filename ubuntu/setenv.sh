@@ -34,3 +34,7 @@ mv ~/.bash_aliases ~/.bash_aliases.bak
 ln -s "$PROJ_ROOT"/.bash_aliases ~/.bash_aliases
 
 . ~/.bashrc
+
+# Add .vimrc
+mv ~/.vimrc ~/.vimrc.bak
+ln -s "$PROJ_ROOT"/ubuntu/.vimrc ~/.vimrc
