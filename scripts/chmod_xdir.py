@@ -7,7 +7,7 @@ mode = (
     | stat.S_IRGRP
     | stat.S_IXGRP
     | stat.S_IXOTH
-    | stat.FILE_ATTRIBUTE_DIRECTORY
+    | stat.FILE_ATTRIBUTE_DIRECTORY ^ stat.S_IWGRP
 )
 
 
