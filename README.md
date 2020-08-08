@@ -51,9 +51,8 @@ cd projects
 git clone https://github.com/drunkwcodes/dotfiles
 cd dotfiles
 cd ubuntu
-cp * ~/
-cd ~/
-. setenv.sh
+. setenv.sh  # normal user script
+. root_setenv.sh  # super user script
 ```
 
 

@@ -2,7 +2,7 @@ BACKUP=~/storage/shared/TermuxBackup
 if [ ! -d "$BACKUP" ]; then
     mkdir "$BACKUP"
 else
-    cp "$BACKUP"/* .  # ~/
+    cp "$BACKUP"/* ~/
 fi
 
 pkg install wget openssl-tool proot tar -y && hash -r
