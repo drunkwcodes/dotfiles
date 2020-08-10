@@ -1,5 +1,5 @@
 "=====================================================
-"" General settings
+"  General settings
 "=====================================================
 syntax enable                               " syntax highlight
 
@@ -29,7 +29,9 @@ set secure                                  " prohibit .vimrc files to execute s
 
 set paste
 
-"" Search settings
+
+"=====================================================
+"  Search settings
 "=====================================================
 set incsearch	                            " incremental search
 set hlsearch	                            " highlight search results
@@ -37,3 +39,22 @@ set hlsearch	                            " highlight search results
 set tabstop=4                               " 4 whitespaces for tabs visual presentation
 set shiftwidth=4                            " shift lines by 4 spaces
 set expandtab                               " expand tabs into spaces
+
+
+
+"=====================================================
+" Commenting blocks of code.
+"=====================================================
+
+
+augroup commenting_blocks_of_code
+  autocmd!
+  autocmd FileType c,cpp,java,scala let b:comment_leader = '// '
+  autocmd FileType sh,ruby,python   let b:comment_leader = '# '
+  autocmd FileType conf,fstab       let b:comment_leader = '# '
+  autocmd FileType tex              let b:comment_leader = '% '
+  autocmd FileType mail             let b:comment_leader = '> '
+  autocmd FileType vim              let b:comment_leader = '" '
+augroup END
+noremap <silent> gcc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
+noremap <silent> gcu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
