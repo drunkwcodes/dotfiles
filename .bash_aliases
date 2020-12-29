@@ -11,6 +11,7 @@ alias cddl='cd ~/Downloads/'
 alias ga='git add'
 alias gb='git branch'
 alias gc='git commit -m'
+alias gca='git commit --amend'
 alias gco='git checkout'
 alias gd='git diff'
 alias gde='git describe'
@@ -21,7 +22,7 @@ alias gs='git status'
 alias gsh='git stash'
 
 # todo command
-alias todo='grep -nr TODO'
+alias todo="grep -nr --exclude='.*' --exclude-dir='.*' TODO"
 
 # untar
 alias untar='tar -xjvf'
