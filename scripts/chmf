@@ -6,12 +6,13 @@ import sys
 from pathlib import Path
 
 def change_mode(path):
-    absp = Path(os.path.abspath(path))
-    os.chmod(absp, stat.S_IRWXU)
+    for dirpath, dirnames, filenames in os.walk(path):
+        for dname in dirnames:
+            os.chmod(os.path.join(dirpath, dname), stat.S_IRWXU)
+            change_mode(os.path.join(dirpath, dname))
 
-    for p in os.listdir(absp):
-        if os.path.isdir(absp / p):
-            os.chmod(absp / p, stat.S_IRWXU)
-            change_mode(absp / p)
+        for fname in filenames:
+            if ".md" in fname or ".py" in fname or ".txt" in fname:
+                os.chmod(os.path.join(dirpath, fname), stat.S_IRWXU ^ stat.S_IXUSR)
 
 change_mode(sys.argv[1])
