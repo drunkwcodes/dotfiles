@@ -2,6 +2,8 @@ apt update
 apt upgrade
 apt install python3 python3-pip python3-venv vim git -y
 
+# This script assumes the machine uses bash and has git and pip3.
+
 # git config
 git config --global user.name "Drunkwcodes"
 git config --global user.email drunkwcodes@gmail.com
