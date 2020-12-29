@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+EXPECTED_ARGS=2
+
+if [ $# -ne $EXPECTED_ARGS ]
+then
+   echo "Usage: chext OLD_EXT NEW_EXT"
+   echo ""
+   echo "Example: chext .txt .html"
+   echo ""
+
+   exit 1
+
+fi;
+
+for file in *$1
+do
+  mv "$file" "${file%$1}$2"
+done
+

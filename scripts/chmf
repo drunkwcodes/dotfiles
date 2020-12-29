@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+
+import stat
+import os
+import sys
+from pathlib import Path
+
+def change_mode(folder):
+    if os.path.isdir(folder):
+        os.chmod(folder, stat.S_IRWXU, dir_fd=True)
+
+        subs = os.listdir(folder)
+        for sub in subs:
+            change_mode(Path(folder) / sub)
+
+change_mode(sys.argv[1])

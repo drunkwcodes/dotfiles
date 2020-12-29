@@ -26,6 +26,8 @@ cp pack.sh ~/projects/
 # load scripts to ~/.local/bin/
 ln -s "$PROJ_ROOT"/scripts/pack.sh ~/.local/bin/pack.sh
 ln -s "$PROJ_ROOT"/scripts/unpack.sh ~/.local/bin/unpack.sh
+ln -s "$PROJ_ROOT"/scripts/chext ~/.local/bin/chext
+ln -s "$PROJ_ROOT"/scripts/cmf ~/.local/bin/cmf
 
 # Patch bashrc
 mv ~/.bashrc ~/.bashrc.bak

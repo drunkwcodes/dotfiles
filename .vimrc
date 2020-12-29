@@ -54,3 +54,13 @@ augroup commenting_blocks_of_code
 augroup END
 noremap <silent> gcc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
 noremap <silent> gcu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
+
+
+"=====================================================
+" vimwiki prerequisites
+"=====================================================
+
+set nocompatible
+filetype plugin on
+syntax on
+
