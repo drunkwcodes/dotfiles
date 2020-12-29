@@ -5,12 +5,13 @@ import os
 import sys
 from pathlib import Path
 
-def change_mode(folder):
-    if os.path.isdir(folder):
-        os.chmod(folder, stat.S_IRWXU, dir_fd=True)
+def change_mode(path):
+    absp = Path(os.path.abspath(path))
+    os.chmod(absp, stat.S_IRWXU)
 
-        subs = os.listdir(folder)
-        for sub in subs:
-            change_mode(Path(folder) / sub)
+    for p in os.listdir(absp):
+        if os.path.isdir(absp / p):
+            os.chmod(absp / p, stat.S_IRWXU)
+            change_mode(absp / p)
 
 change_mode(sys.argv[1])
