@@ -25,7 +25,7 @@ alias gsh='git stash'
 alias todo="grep -nr --exclude='.*' --exclude-dir='.*' TODO"
 
 # untar
-alias untar='tar -xjvf'
+alias untar='tar -xzvf'
 
 # valgrind
 alias vg='valgrind'
