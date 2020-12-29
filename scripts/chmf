@@ -5,14 +5,57 @@ import os
 import sys
 from pathlib import Path
 
+
 def change_mode(path):
     for dirpath, dirnames, filenames in os.walk(path):
         for dname in dirnames:
-            os.chmod(os.path.join(dirpath, dname), stat.S_IRWXU)
-            change_mode(os.path.join(dirpath, dname))
+            try:
+                os.chmod(os.path.join(dirpath, dname), stat.S_IRWXU)
+            except OSError as e:
+                print(e)
 
         for fname in filenames:
-            if ".md" in fname or ".py" in fname or ".txt" in fname:
-                os.chmod(os.path.join(dirpath, fname), stat.S_IRWXU ^ stat.S_IXUSR)
+            if (
+                ".md" in fname
+                or ".py" in fname
+                or ".txt" in fname
+                or ".toml" in fname
+                or ".c" in fname
+                or ".cfg" in fname
+                or ".in" in fname
+                or ".ini" in fname
+                or ".css" in fname
+                or ".js" in fname
+                or ".html" in fname
+                or ".yml" in fname
+                or ".yaml" in fname
+                or ".wav" in fname
+                or ".mid" in fname
+                or ".mp3" in fname
+                or ".sav" in fname
+            ):
+
+                try:
+                    os.chmod(os.path.join(dirpath, fname), stat.S_IRWXU ^ stat.S_IXUSR)
+                except OSError as e:
+                    print(e)
+
+            elif (
+                ".png" in fname
+                or ".pdf" in fname
+                or ".jpg" in fname
+                or ".jpeg" in fname
+                or ".url" in fname
+                or ".cpt" in fname
+            ):
+
+                try:
+                    os.chmod(
+                        os.path.join(dirpath, fname),
+                        stat.S_IRWXU ^ stat.S_IXUSR ^ stat.S_IWRITE,
+                    )
+                except OSError as e:
+                    print(e)
+
 
 change_mode(sys.argv[1])
