@@ -57,10 +57,18 @@ noremap <silent> gcu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<
 
 
 "=====================================================
-" vimwiki prerequisites
+" vimwiki prerequisites and settings
 "=====================================================
 
 set nocompatible
 filetype plugin on
 syntax on
 
+
+let wiki_1 = {}
+let wiki_1.path = '~/vimwiki/'
+let wiki_1.syntax = 'markdown'
+let wiki_1.ext = '.md'
+
+let g:vimwiki_list = [wiki_1]
+let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
