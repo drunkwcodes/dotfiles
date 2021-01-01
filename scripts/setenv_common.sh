@@ -21,7 +21,7 @@ mkdir ~/Downloads/
 cp pack.sh ~/projects/
 
 # update user dirs locale
-./update_locale.sh
+"$PROJ_ROOT"/scripts/update_locale.sh
 
 # load scripts to ~/.local/bin/
 ln -s "$PROJ_ROOT"/scripts/pack.sh ~/.local/bin/pack.sh
