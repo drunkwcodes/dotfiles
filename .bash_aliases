@@ -4,6 +4,7 @@
 
 alias cdp='cd ~/projects/'
 alias cdd='cd ~/Documents/'
+alias cdde='cd ~/Desktop/'
 alias cddi='cd ~/Documents/diary'
 alias cddl='cd ~/Downloads/'
 
