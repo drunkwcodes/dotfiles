@@ -39,7 +39,18 @@ set hlsearch	                            " highlight search results
 
 
 "=====================================================
-" Commenting blocks of code.
+"  Remove all trailing whitespace by pressing F5
+"=====================================================
+
+
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
+
+" https://stackoverflow.com/questions/356126/how-can-you-automatically-remove-trailing-whitespace-in-vim
+
+
+"=====================================================
+"  Commenting blocks of code.
 "=====================================================
 
 
