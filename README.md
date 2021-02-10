@@ -1,5 +1,7 @@
 # Dotfiles
 
+## WARNING: OUTDATED README
+
 ## Usage
 
 ### Termux
