@@ -8,6 +8,9 @@ alias cdde='cd ~/Desktop/'
 alias cddi='cd ~/Documents/diary'
 alias cddl='cd ~/Downloads/'
 
+# preserving cp command
+alias cp='cp -p'
+
 # git aliases
 alias ga='git add'
 alias gb='git branch'
