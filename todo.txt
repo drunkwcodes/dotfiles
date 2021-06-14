@@ -1,0 +1,2 @@
+TODO: rewrite setenv.sh with other scripts
+TODO: clean up ubuntu folder to be copied.
