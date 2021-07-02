@@ -80,37 +80,38 @@ keys = [
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
     Key([mod, "shift", "control"], "q", lazy.spawn("gnome-session-quit --power-off")),
     # customized shortcuts
-    Key([mod], "f", lazy.spawn("firefox")),
+    Key([mod], 'f', lazy.spawn('firefox')),
 ]
 
 
-keys += [
-    EzKey(k[0], *k[1:])
-    for k in [
-        # .: Movement :.
-        # Swtich focus between panes
-        ("M-<Up>", lazy.layout.up()),
-        ("M-<Down>", lazy.layout.down()),
-        ("M-<Left>", lazy.layout.left()),
-        ("M-<Right>", lazy.layout.right()),
-        # Swap panes: target relative to active.
-        # NOTE :: The `swap` commands are for XMonad
-        ("M-S-<Up>", lazy.layout.shuffle_up()),
-        ("M-S-<Down>", lazy.layout.shuffle_down()),
-        ("M-S-<Left>", lazy.layout.shuffle_left(), lazy.layout.swap_left()),
-        ("M-S-<Right>", lazy.layout.shuffle_right(), lazy.layout.swap_right()),
-        ("M-S-h", lazy.layout.shuffle_left(), lazy.layout.swap_left()),
-        ("M-S-j", lazy.layout.shuffle_down()),
-        ("M-S-k", lazy.layout.shuffle_up()),
-        ("M-S-l", lazy.layout.shuffle_right(), lazy.layout.swap_right()),
-        # Grow/shrink the main the focused window
-        # NOTE :: grow/shrink for XMonadTall, grow_X for Wmii/BSP
-        ("M-C-<Up>", lazy.layout.grow_up()),
-        ("M-C-<Down>", lazy.layout.grow_down()),
-        ("M-C-<Left>", lazy.layout.grow_left()),
-        ("M-C-<Right>", lazy.layout.grow_right()),
-    ]
-]
+keys += [EzKey(k[0], *k[1:]) for k in [
+    # .: Movement :.
+    # Swtich focus between panes
+    ("M-<Up>", lazy.layout.up()),
+    ("M-<Down>", lazy.layout.down()),
+    ("M-<Left>", lazy.layout.left()),
+    ("M-<Right>", lazy.layout.right()),
+
+
+    # Swap panes: target relative to active.
+    # NOTE :: The `swap` commands are for XMonad
+    ("M-S-<Up>", lazy.layout.shuffle_up()),
+    ("M-S-<Down>", lazy.layout.shuffle_down()),
+    ("M-S-<Left>", lazy.layout.shuffle_left(), lazy.layout.swap_left()),
+    ("M-S-<Right>", lazy.layout.shuffle_right(), lazy.layout.swap_right()),
+
+    ("M-S-h", lazy.layout.shuffle_left(), lazy.layout.swap_left()),
+    ("M-S-j", lazy.layout.shuffle_down()),
+    ("M-S-k", lazy.layout.shuffle_up()),
+    ("M-S-l", lazy.layout.shuffle_right(), lazy.layout.swap_right()),
+
+    # Grow/shrink the main the focused window
+    # NOTE :: grow/shrink for XMonadTall, grow_X for Wmii/BSP
+    ("M-C-<Up>", lazy.layout.grow_up()),
+    ("M-C-<Down>", lazy.layout.grow_down()),
+    ("M-C-<Left>", lazy.layout.grow_left()),
+    ("M-C-<Right>", lazy.layout.grow_right()),
+]]
 
 
 groups = [Group(i) for i in "123456789"]
@@ -176,10 +177,9 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
-                # widget.TextBox("default config", name="default"),
+                widget.TextBox("default config", name="default"),
                 widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
                 widget.Systray(),
-                widget.Net(interface="wlp2s0"),
                 widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
                 widget.QuickExit(),
             ],
@@ -257,8 +257,7 @@ def dbus_register():
         ]
     )
 
-
 @hook.subscribe.startup_once
 def startup_once():
-    subprocess.Popen(["fcitx-autostart"])
-    subprocess.Popen(["start-pulseaudio-x11"])
+    subprocess.Popen(['fcitx-autostart'])
+    subprocess.Popen(['start-pulseaudio-x11'])
