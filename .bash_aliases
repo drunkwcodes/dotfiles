@@ -43,3 +43,7 @@ alias t3='tree -L 3'
 # pew aliases
 
 alias w='pew workon'
+
+# ipython aliases
+
+alias i='ipython -i console.py'
