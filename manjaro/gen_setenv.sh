@@ -6,4 +6,4 @@ sed -i -e 's/sudo apt upgrade//g' setenv.sh
 
 sed -i -e 's/sudo apt install python3 python3-pip python3-venv vim git -y/sudo pacman -S vim/g' setenv.sh
 
-
+# Don't forget to make .zshrc source .bashrc in setenv.sh!
