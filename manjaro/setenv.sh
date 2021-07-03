@@ -32,8 +32,7 @@ ln -s "$PROJ_ROOT"/.vimrc ~/.vimrc
 # Update, Installation
 sudo pacman -Syu
 
-sudo pacman -S vim
-
+sudo pacman -S vim fcitx5-rime fcitx5-configtool
 # This script assumes the machine uses bash and has git and pip3.
 
 # git config
