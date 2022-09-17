@@ -29,3 +29,7 @@ rm ~/.bash_aliases
 ln -s "$PROJ_ROOT"/windows/terminal/.bash_aliases ~/.bash_aliases
 
 . ~/.bashrc
+
+# Patch zshrc
+rm ~/.zshrc
+ln -s "$PROJ_ROOT"/windows/terminal/.zshrc ~/.zshrc
