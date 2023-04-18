@@ -115,3 +115,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+
+export PATH="/home/drunkwcodes/.local/lib/python3.10/site-packages:$PATH"
