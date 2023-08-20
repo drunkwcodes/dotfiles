@@ -42,4 +42,5 @@ git config --global merge.tool vimdiff
 git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 
 # pip user install
-pip3 install --user -U autopep8 ipython pytest pytest-cov black pew
+# Doen't need any more.
+# pip3 install --user -U autopep8 ipython pytest pytest-cov black pew
