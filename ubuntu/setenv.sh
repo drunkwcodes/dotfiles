@@ -44,3 +44,4 @@ git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h
 # pip user install
 # Doen't need any more.
 # pip3 install --user -U autopep8 ipython pytest pytest-cov black pew
+pip3 install --user -U pdm
