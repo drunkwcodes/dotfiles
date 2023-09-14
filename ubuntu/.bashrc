@@ -118,3 +118,5 @@ fi
 
 
 export PATH="/home/drunkwcodes/.local/lib/python3.10/site-packages:$PATH"
+export PATH="~/.local/bin:$PATH"
+
