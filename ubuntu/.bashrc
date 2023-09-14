@@ -120,3 +120,6 @@ fi
 export PATH="/home/drunkwcodes/.local/lib/python3.10/site-packages:$PATH"
 export PATH="~/.local/bin:$PATH"
 
+export MODULAR_HOME="/home/drunkwcodes/.modular"
+export PATH="/home/drunkwcodes/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+
