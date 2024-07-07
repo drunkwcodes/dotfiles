@@ -5,10 +5,11 @@ PROJ_ROOT=~/projects/dotfiles
 mkdir ~/projects/
 mkdir ~/Downloads/
 
-cp pack.sh ~/projects/
+cp "$PROJ_ROOT"/scripts/pack.sh ~/projects/
+cp "$PROJ_ROOT"/scripts/unpack.sh ~/projects/
 
 # update user dirs locale
-./update_locale.sh
+"$PROJ_ROOT"/scripts/update_locale.sh
 
 # Patch bashrc
 mv ~/.bashrc ~/.bashrc.bak
@@ -28,7 +29,11 @@ ln -s "$PROJ_ROOT"/.vimrc ~/.vimrc
 # Update, Installation
 sudo apt update
 sudo apt upgrade
-sudo apt install python3 python3-pip python3-venv vim git -y
+sudo apt install python3 python3-pip python3-venv vim git
+sudo apt install python3-ipython -y
+
+curl -sSL https://pdm-project.org/install-pdm.py | python3 -
+
 
 # This script assumes the machine uses bash and has git and pip3.
 
@@ -44,5 +49,5 @@ git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h
 # pip user install
 # Doen't need any more.
 # pip3 install --user -U autopep8 ipython pytest pytest-cov black pew
-pip3 install --user -U pdm ipython
+# pip3 install --user -U pdm ipython
 
