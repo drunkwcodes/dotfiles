@@ -1,6 +1,6 @@
 # Dotfiles
 
-## WARNING: OUTDATED README
+## Nice try: https://dotfiles.github.io/utilities/
 
 ## Usage
 
