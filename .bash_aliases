@@ -46,4 +46,5 @@ alias w='pew workon'
 
 # ipython aliases
 
+alias ipython='python3 -m IPython'
 alias i='ipython -i console.py'
