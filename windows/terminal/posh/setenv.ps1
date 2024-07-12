@@ -4,3 +4,5 @@ git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h
 
 git config --global user.name "Drunkwcodes"
 git config --global user.email drunkwcodes@gmail.com
+
+# introduce vim, scoop, oh-my-posh etc. next time.
