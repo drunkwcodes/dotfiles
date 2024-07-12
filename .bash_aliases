@@ -48,3 +48,6 @@ alias w='pew workon'
 
 alias ipython='python3 -m IPython'
 alias i='ipython -i console.py'
+
+# venv alias
+alias activate='. .venv/bin/activate'
