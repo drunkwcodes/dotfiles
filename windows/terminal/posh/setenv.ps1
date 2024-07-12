@@ -1,0 +1,1 @@
+New-Item -ItemType SymbolicLink -Path $PROFILE -Target ".\\Microsoft.PowerShell_profile.ps1"
