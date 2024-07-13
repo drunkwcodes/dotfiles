@@ -2,7 +2,7 @@ function Get-GitStatus { & git status $args }
 New-Alias -Name gs -Value Get-GitStatus -Force -Option AllScope
 
 function Get-GitStash { & git stash $args }
-New-Alias -Name gsh -Value Get-GitStatus -Force -Option AllScope
+New-Alias -Name gsh -Value Get-GitStash -Force -Option AllScope
 
 function Get-GitCommit { & git commit -m $args }
 New-Alias -Name gc -Value Get-GitCommit -Force -Option AllScope
