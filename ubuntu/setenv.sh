@@ -29,7 +29,7 @@ ln -s "$PROJ_ROOT"/.vimrc ~/.vimrc
 # Update, Installation
 sudo apt update
 sudo apt upgrade
-sudo apt install python3 python3-pip python3-venv vim git curl
+sudo apt install python3 python3-pip python3-venv vim git curl -y
 sudo apt install python3-ipython -y
 
 curl -sSL https://pdm-project.org/install-pdm.py | python3 -
@@ -53,3 +53,13 @@ git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h
 # pip3 install --user -U autopep8 ipython pytest pytest-cov black pew
 # pip3 install --user -U pdm ipython
 
+
+# bash: smart autocomplete based on history
+# https://superuser.com/questions/748809/bash-smart-autocomplete-based-on-history
+
+cat >> ~/.inputrc <<'EOF'
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+EOF
+
+bind -f  ~/.inputrc
