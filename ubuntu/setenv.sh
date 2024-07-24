@@ -41,7 +41,7 @@ ln -s "$PROJ_ROOT"/.vimrc ~/.vimrc
 # Update, Installation
 sudo apt update
 sudo apt upgrade
-sudo apt install python3 python3-pip python3-venv vim git curl -y
+sudo apt install python3 python3-pip python3-venv vim git curl ugrep -y
 sudo apt install python3-ipython -y
 
 curl -sSL https://pdm-project.org/install-pdm.py | python3 -
