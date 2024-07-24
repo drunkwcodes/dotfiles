@@ -8,6 +8,12 @@ mkdir ~/Downloads/
 cp "$PROJ_ROOT"/scripts/pack.sh ~/projects/
 cp "$PROJ_ROOT"/scripts/unpack.sh ~/projects/
 
+# load scripts to ~/.local/bin/
+ln -s "$PROJ_ROOT"/scripts/pack.sh ~/.local/bin/pack.sh
+ln -s "$PROJ_ROOT"/scripts/unpack.sh ~/.local/bin/unpack.sh
+ln -s "$PROJ_ROOT"/scripts/pomodoro.py ~/.local/bin/pom
+
+
 # update user dirs locale
 "$PROJ_ROOT"/scripts/update_locale.sh
 
