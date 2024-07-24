@@ -12,17 +12,23 @@ cp "$PROJ_ROOT"/scripts/unpack.sh ~/projects/
 "$PROJ_ROOT"/scripts/update_locale.sh
 
 # Patch bashrc
-mv ~/.bashrc ~/.bashrc.bak
+if [ ! -f ~/.bashrc.bak ]; then
+    mv ~/.bashrc ~/.bashrc.bak
+fi
 ln -s "$PROJ_ROOT"/ubuntu/.bashrc ~/.bashrc
 
 # Add aliases
-mv ~/.bash_aliases ~/.bash_aliases.bak
+if [ ! -f ~/.bash_aliases.bak ]; then
+    mv ~/.bash_aliases ~/.bash_aliases.bak
+fi
 ln -s "$PROJ_ROOT"/.bash_aliases ~/.bash_aliases
 
 . ~/.bashrc
 
 # Add .vimrc
-mv ~/.vimrc ~/.vimrc.bak
+if [ ! -f ~/.vimrc.bak ]; then
+    mv ~/.vimrc ~/.vimrc.bak
+fi
 ln -s "$PROJ_ROOT"/.vimrc ~/.vimrc
 
 
@@ -35,7 +41,7 @@ sudo apt install python3-ipython -y
 curl -sSL https://pdm-project.org/install-pdm.py | python3 -
 
 
-# This script assumes the machine uses bash and has git and pip3.
+# This script assumes the machine uses bash and has git, vim, curl and pip3.
 
 # git config
 git config --global user.name "Drunkwcodes"
@@ -63,3 +69,8 @@ cat >> ~/.inputrc <<'EOF'
 EOF
 
 bind -f  ~/.inputrc
+
+# Typescript things
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+nvm install 20
+npm install -g typescript
