@@ -120,10 +120,9 @@ fi
 export PATH="/home/drunkwcodes/.local/lib/python3.10/site-packages:$PATH"
 export PATH="~/.local/bin:$PATH"
 
-export MODULAR_HOME="/home/drunkwcodes/.modular"
-export PATH="/home/drunkwcodes/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
-
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export MODULAR_HOME="/home/drunkwcodes/.modular"
+export PATH="/home/drunkwcodes/.modular/pkg/packages.modular.com_max/bin:$PATH"
