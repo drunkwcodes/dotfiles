@@ -51,3 +51,6 @@ alias i='ipython -i console.py'
 
 # venv alias
 alias activate='. .venv/bin/activate'
+
+# PTT
+alias ptt='ssh bbsu@ptt.cc'
