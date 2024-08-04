@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 from datetime import datetime
 from time import sleep
 
@@ -13,6 +14,7 @@ if __name__ == "__main__":
         print("\a")
         sleep(1)
 
+    os.system('notify-send "25 min passed"')
 
     now = datetime.now()
     print(f"End at {now}")
