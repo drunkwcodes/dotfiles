@@ -12,6 +12,7 @@ cp "$PROJ_ROOT"/scripts/unpack.sh ~/projects/
 ln -s "$PROJ_ROOT"/scripts/pack.sh ~/.local/bin/pack.sh
 ln -s "$PROJ_ROOT"/scripts/unpack.sh ~/.local/bin/unpack.sh
 ln -s "$PROJ_ROOT"/scripts/pomodoro.py ~/.local/bin/pom
+ln -s "$PROJ_ROOT"/scripts/bb ~/.local/bin/bb
 
 
 # update user dirs locale

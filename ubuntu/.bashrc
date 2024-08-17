@@ -126,3 +126,4 @@ export NVM_DIR="$HOME/.nvm"
 
 export MODULAR_HOME="/home/drunkwcodes/.modular"
 export PATH="/home/drunkwcodes/.modular/pkg/packages.modular.com_max/bin:$PATH"
+. "$HOME/.cargo/env"

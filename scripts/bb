@@ -1,0 +1,3 @@
+cd ~/projects/bb7
+. .venv/bin/activate
+bb7 $1 $2 $3
