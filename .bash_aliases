@@ -7,6 +7,7 @@ alias cdd='cd ~/Documents/'
 alias cdde='cd ~/Desktop/'
 alias cddi='cd ~/projects/diary'
 alias cddl='cd ~/Downloads/'
+alias cdf='cd ~/projects/myfoam/'
 
 # preserving cp command
 alias cp='cp -p'
