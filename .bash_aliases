@@ -56,3 +56,6 @@ alias activate='. .venv/bin/activate'
 # PTT
 alias ptt='ssh bbsu@ptt.cc'
 
+
+# bb7
+alias bb='bb7'
