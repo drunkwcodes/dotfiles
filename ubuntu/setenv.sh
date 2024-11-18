@@ -12,7 +12,6 @@ cp "$PROJ_ROOT"/scripts/unpack.sh ~/projects/
 ln -s "$PROJ_ROOT"/scripts/pack.sh ~/.local/bin/pack.sh
 ln -s "$PROJ_ROOT"/scripts/unpack.sh ~/.local/bin/unpack.sh
 ln -s "$PROJ_ROOT"/scripts/pomodoro.py ~/.local/bin/pom
-ln -s "$PROJ_ROOT"/scripts/bb ~/.local/bin/bb
 
 
 # update user dirs locale
@@ -43,7 +42,7 @@ ln -s "$PROJ_ROOT"/.vimrc ~/.vimrc
 sudo apt update
 sudo apt upgrade
 sudo apt install python3 python3-pip python3-venv vim git curl ugrep -y
-sudo apt install python3-ipython pipx -y
+sudo apt install pipx -y
 
 pipx ensurepath
 
